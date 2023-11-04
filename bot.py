@@ -59,15 +59,15 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/botmrn"),
+                        InlineKeyboardButton("🖥️ Channel", url="https://t.me/botmrn"),
                         InlineKeyboardButton("💬 Support", url="https://t.me/botmrn01")
                     ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://github.com/botmrnbrand/VJ-Auto-Approval-Bot")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/AutoApprovedRobot?startgroup=s&admin=delete_messages+invite_users")
                     ]
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://graph.org/file/d57d6f83abb6b8d0efb02.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @botmrn __**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://graph.org/file/d57d6f83abb6b8d0efb02.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @botmrn __**".format(m.from_user.mention, "https://t.me/botmrn"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
