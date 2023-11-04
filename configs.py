@@ -10,7 +10,7 @@ class Config:
     API_HASH = getenv("API_HASH", "e9950151f3fd643b11acc1f586064609")
     BOT_TOKEN = getenv("BOT_TOKEN", "6538957630:AAHi3CB3H-OWaL8aGE8wB_RiMr4I8YsBTVE")
     FSUB = getenv("FSUB", "botmrn")
-    CHID = int(getenv("CHID", "-1002026488733"))
+    CHID = int(getenv("CHID", "-1001850646062"))
     SUDO = list(map(int, getenv("SUDO", "5276549368").split()))
     MONGO_URI = getenv("MONGO_URI", "mongodb+srv://botmrn2:Botmrn2@botmrn.zyfi0a2.mongodb.net/?retryWrites=true&w=majority")
     
